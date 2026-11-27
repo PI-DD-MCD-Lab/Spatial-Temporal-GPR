@@ -1,0 +1,20 @@
+function gcv = gcvfunction(Y,space,time,noisevar,NM,Params)
+Locations = Params.spaceLocs;
+% time_Covxx = CovMatrix(timevectortest,timevectortest,time);
+% time_Covxy = CovMatrix(timevectortest,timevectortrain,time);
+time_Covyy = CovMatrix(Params.traintime,Params.traintime,time);
+spatial_Cov = CovMatrix(Locations,Locations,space);
+N = size(Params.traintime,1);
+Y = Y(:,1:N);
+Y = Y(:);
+I = eye(NM);
+Sigma = kron(time_Covyy,spatial_Cov);
+SigmaN = Sigma + noisevar * I;
+[Q, R] = qr(SigmaN);
+inverse = (I/R)/Q;
+
+estimatef = Sigma*inverse*Y;
+SN = norm(estimatef - Y);
+SN = SN^2;
+deltaN = trace(Sigma*inverse);
+gcv = SN/(NM*(1-deltaN/NM)^2);
