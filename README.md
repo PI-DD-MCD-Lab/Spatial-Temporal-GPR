@@ -14,7 +14,25 @@ MATLAB and Optimization Toolbox (fmincon) are required. Additional requirements 
 
 ## Citation and attribution
 
-If you use this code in research, please acknowledge this repository and cite the underlying methods you use. The original implementation credits these papers:
+If you use this code in your work, please cite:
+
+> Junpeng Zhang, Yue Ju, Biqiang Mu, Renxin Zhong, and Tianshi Chen, "An Efficient Implementation for Spatial-Temporal Gaussian Process Regression and Its Applications," Automatica, vol. 147, article 110679, 2023. [https://doi.org/10.1016/j.automatica.2022.110679](https://doi.org/10.1016/j.automatica.2022.110679)
+
+```bibtex
+@article{Zhang2023SpatialTemporalGPR,
+  author  = {Zhang, Junpeng and Ju, Yue and Mu, Biqiang and Zhong, Renxin and Chen, Tianshi},
+  title   = {An Efficient Implementation for Spatial-Temporal {Gaussian} Process Regression and Its Applications},
+  journal = {Automatica},
+  volume  = {147},
+  pages   = {110679},
+  year    = {2023},
+  doi     = {10.1016/j.automatica.2022.110679}
+}
+```
+
+GitHub's "Cite this repository" feature provides this paper as the preferred citation through [CITATION.cff](CITATION.cff). This citation request does not alter applicable license terms.
+
+The original implementation also credits these papers:
 
 1. A. Carron, M. Todescato, R. Carli, L. Schenato, and G. Pillonetto, "Machine Learning meets Kalman Filtering," 55th Conference on Decision and Control, 2016, pp. 4594–4599.
 2. M. Todescato, A. Carron, R. Carli, G. Pillonetto, and L. Schenato, "Efficient Spatio-Temporal Gaussian Regression via Kalman Filtering," arXiv:1705.01485.

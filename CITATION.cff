@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the Automatica paper below."
+title: "Spatial-Temporal GPR"
+type: software
+authors:
+  - family-names: Zhang
+    given-names: Junpeng
+  - family-names: Ju
+    given-names: Yue
+  - family-names: Mu
+    given-names: Biqiang
+  - family-names: Zhong
+    given-names: Renxin
+  - family-names: Chen
+    given-names: Tianshi
+repository-code: "https://github.com/PI-DD-MCD-Lab/Spatial-Temporal-GPR"
+preferred-citation:
+  type: article
+  title: "An Efficient Implementation for Spatial-Temporal Gaussian Process Regression and Its Applications"
+  authors:
+    - family-names: Zhang
+      given-names: Junpeng
+    - family-names: Ju
+      given-names: Yue
+    - family-names: Mu
+      given-names: Biqiang
+    - family-names: Zhong
+      given-names: Renxin
+    - family-names: Chen
+      given-names: Tianshi
+  journal: Automatica
+  volume: "147"
+  article-number: "110679"
+  year: 2023
+  doi: "10.1016/j.automatica.2022.110679"
+  url: "https://doi.org/10.1016/j.automatica.2022.110679"
